@@ -1,4 +1,5 @@
-Binary search adalah metode pencarian suatu data atau elemen di dalam suatu array dengan kondisi data dalam keadaan terurut. Proses pencarian binary search hanya dapat dilakukan pada sekumpulan data yang sudah diurutkan terlebih dahulu. Prinsip dari binary search terhadap N elemen dapat dijelaskan seperti berikut:
+Binary search adalah metode pencarian suatu data atau elemen di dalam suatu array dengan kondisi data dalam keadaan terurut. 
+Proses pencarian binary search hanya dapat dilakukan pada sekumpulan data yang sudah diurutkan terlebih dahulu. Prinsip dari binary search terhadap N elemen dapat dijelaskan seperti berikut:
     1.      Tentukan posisi awal = 0 dan posisi akhir = N-1.
     2.      Hitung posisi tengah = (posisi awal + posisi akhir)/2.
     3.      Bandingkan data yang dicari dengan elemen posisi tengah.
