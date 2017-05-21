@@ -1,0 +1,27 @@
+Binary search adalah metode pencarian suatu data atau elemen di dalam suatu array dengan kondisi data dalam keadaan terurut. Proses pencarian binary search hanya dapat dilakukan pada sekumpulan data yang sudah diurutkan terlebih dahulu. Prinsip dari binary search terhadap N elemen dapat dijelaskan seperti berikut:
+    1.      Tentukan posisi awal = 0 dan posisi akhir = N-1.
+    2.      Hitung posisi tengah = (posisi awal + posisi akhir)/2.
+    3.      Bandingkan data yang dicari dengan elemen posisi tengah.
+-       -     Jika sama maka catat posisi dan cetak kemudian berhenti.
+-       -    Jika lebih besar maka akan dilakukan pencarian kembali kebagian kanan dengan posisi awal =        
+p      posisi tengah +1 dan posisi akhir tetap kemudian ulangi mulai poin 2.
+-       -   Jika lebih kecil maka akan di lakukan pencarian kembali ke bagian kiri dengan nilai posisi awal 
+t       tetap dan nilai posisi akhir  = posisi tengah-1 kemudian ulangi mulai poin 2.
+Misalkan kita mempunyai sederatan data dalam array nilai sebanyak 10 elemen dan akan dilakukan pencarian data 87 terhadap array.
+Nilai[0..9] = 12,45,23,87,90,55,15,25,40,21
+Urutkan elemen array secara menaik, sehingga diperoleh:
+Nilai[0..9] = 12,15,21,23,25,40,45,55,87,90
+Data yang akan dicari = 87(bilangan)
+Tentukan nilai awal = 0, akhir = N-1=9
+Hitung tengah = (9+0)/2=4
+Bandingkan Bilangan < Nilai[tengah]->87=25->false
+Bandingkan Bilangan < Nilai[tengah]->87<25->false
+Bandingkan Bilangan < Nilai[tengah]->87>25->true maka pencarian dilakukan ke sebelah kanan dengan nilai awal = tengah+1 = 5
+Karena awal masih lebih kecil dari akhir maka ulangi kembali mulai menghitung tengah
+Hitung tengah = (9+5)/2=7
+Bandingkan Bilangan  < Nilai[tengah] ->87=55->false
+Bandingkan Bilangan < Nilai[Tengah]->87<55->false
+Bandingkan Bilangan < Nilai[tengah]->87>55->true maka pencarian dilakukan ke sebelah kanan dengan nilai awal = tengah+1 = 8
+Karena awal masih lebih kecil dari akhir maka ulangi kembali mulai menghitung tengah
+Hitung tengah = (9+8)/2 = 8
+Bandingkan Bilangan < Nilai[tengah]->87=87->true
